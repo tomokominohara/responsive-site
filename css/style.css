@@ -1,0 +1,157 @@
+@charset "UTF-8";    /* 文字コードの指定 */
+
+@import 'https://fonts.googleapis.com/css?family=Abel';    /* Google Fonts用のCSSを読み込み */
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #4c4c4c;
+    background-color: #fcfcff;
+}
+
+a
+{
+    text-decoration: none;
+
+    color: #14c0c9;
+}
+a:visited
+{
+    color: #0f949b;
+}
+a:hover
+{
+    color: #0f949b;
+}
+a:active
+{
+    color: #16d6e0;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+
+.text-center
+{
+    text-align: center;
+}
+header .box
+{
+    margin: 0 auto;
+}  
+.box
+{
+    text-align: center;
+}
+section
+{
+    padding: 30px 0;
+}
+section .container
+{
+    width: 90%;
+    margin: 0 auto;
+}
+.box {
+  background-image:url("../images/img_top.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+#skills h1
+{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 30px 0;
+}
+#skills .container
+{
+    display: -webkit-flex;
+    display:         flex;
+    justify-content: space-between;
+}
+#skills h2
+{
+    font-size: 1.8rem;
+    padding: 5px 0;
+    margin-bottom: 6px;
+}
+#skills .skill-box
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-flex: 1;
+            flex: 1;
+    margin: 0px 10px;
+    padding: 20px;
+    background-color: #f2f5f5;
+}
+@media (max-width: 768px) {
+ .container {
+   flex-direction: column;
+}
+#skills .skill-box{
+  margin-bottom:20px;
+}
+.box {
+  background-image:url("../images/img_top.jpg");
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+}
+#contact
+{
+padding: 20px 0;
+}
+#contact h3
+{
+    font-size: 1.8rem;
+    padding: 10px 0;
+    margin-bottom: 6px;
+}
+#contact .button-contact
+{
+    font-size: 1.8rem;
+    width: 250px;
+    padding: 5px 0;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+
+    display: block;
+    
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    background-color: #606161;
+}
+.uppercase,
+#contact .button-contact
+{
+    text-transform: uppercase;
+}
+#contact .button-contact:hover,
+#contact .button-contact:active
+{
+    color: #fff;
+    background-color: #424242;
+}
+footer
+{
+　　font-size: 1rem;
+    padding: 20px 0;
+    text-align: center;
+}
